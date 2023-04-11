@@ -5,27 +5,27 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Offcanvas from 'react-bootstrap/Offcanvas'
-import { Heart } from 'react-bootstrap-icons'
-import { Person } from 'react-bootstrap-icons'
-import { Cart } from 'react-bootstrap-icons'
+import { Heart, Cart, Person } from 'react-bootstrap-icons'
+
+import styled from 'styled-components'
 
 function OffcanvasExample() {
     return (
         <>
             {[false].map((expand) => (
                 <Navbar
+                    style={{ backgroundColor: '#C1C35B', padding: '0' }}
                     key={expand}
-                    bg="light"
                     expand={expand}
-                    className="mb-3"
                 >
                     <Container fluid>
-                        {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                         />
-                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-                        {/* <Heart color="red" size={32} /> */}
+                        <Navbar.Brand href="#" style={{ fontSize: '35px' }}>
+                            Navbar Offcanvas
+                        </Navbar.Brand>
+
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -71,13 +71,12 @@ function OffcanvasExample() {
                                 </Form>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
-                        <div className="nav-icon">
-                            <Heart color="black" size={32} />
-                            <Cart color="black" size={32} />
 
-                            <Person color="black" size={32} />
-                        </div>
-                        {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
+                        <NavIcons>
+                            <Heart />
+                            <Cart />
+                            <Person />
+                        </NavIcons>
                     </Container>
                 </Navbar>
             ))}
@@ -86,3 +85,18 @@ function OffcanvasExample() {
 }
 
 export default OffcanvasExample
+
+//Using styled components
+
+const NavIcons = styled.div`
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    & svg {
+        color: black;
+        height: 30px;
+        width: 30px;
+    }
+`
