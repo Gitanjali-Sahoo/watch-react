@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext} from 'react'
+import MyContext from './MyContext'
 import styled from 'styled-components'
+
 
 const ImageSlider = ({ images, interval }) => {
     const [index, setIndex] = useState(0)
@@ -10,12 +12,15 @@ const ImageSlider = ({ images, interval }) => {
         }, interval)
         return () => clearInterval(timer)
     }, [index, images.length, interval])
+    
+    const value = useContext(MyContext);
 
     return (
         <div>
             <Wrap>
                 <TitleText>
-                    <h2>Lovely Watches</h2>
+                <h2>{value}</h2>
+                    {/* <h2>Lovely Watches</h2> */}
                     <p>Explore Here</p>
                 </TitleText>
                 <img src={images[index]} alt="slider" />

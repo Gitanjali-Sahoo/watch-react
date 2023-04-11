@@ -1,11 +1,11 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import Navbar from './components/Navbar'
 import ImageSlider from './components/ImageSlider'
-
 import Category from './components/Category'
 import Cards from './components/Cards'
+import Footer from './components/Footer'
+import MyContext from './components/MyContext'
 
 function App() {
     const images = [
@@ -19,12 +19,13 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <ImageSlider images={images} interval={interval} />
-            {/* <Slider slides={slides} /> */}
+            <MyContext.Provider value="Lovely Watches">
+                <ImageSlider images={images} interval={interval} />
+            </MyContext.Provider>
 
-            {/* <ImageSlider/> */}
             <Category />
             <Cards />
+            <Footer />
         </div>
     )
 }

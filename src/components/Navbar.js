@@ -7,6 +7,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { Heart, Cart, Person } from 'react-bootstrap-icons'
 
+
+
 import styled from 'styled-components'
 
 function OffcanvasExample() {
@@ -40,7 +42,9 @@ function OffcanvasExample() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
+
                                     <Nav.Link href="#action1">Home</Nav.Link>
+
                                     <Nav.Link href="#action2">Link</Nav.Link>
                                     <NavDropdown
                                         title="Dropdown"
