@@ -1,0 +1,182 @@
+[
+    {
+        "id": "1",
+        "image": "/public/images/roger-varenhorst-pR2WH4gnWrw-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Cat-eye T1",
+        "brand": "Browline",
+        "price": "899",
+        "gender": "male"
+    },
+    {
+        "id": "2",
+        "image": "/public/images/watch-gfdd49d497_1920.jpg",
+        "alt": "Watch Image",
+        "name": "Geoglass 1",
+        "brand": "Browline",
+        "price": "1999",
+        "gender": "female"
+    },
+    {
+        "id": "3",
+        "image": "/public/images/andrey-matveev-9mU2L4dVYFA-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Roundicus X2000",
+        "brand": "Melina",
+        "price": "1099",
+        "gender": "unisex"
+    },
+    {
+        "id": "4",
+        "image": "/public/images/yearone-1FlZ4PY4FXs-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Norman",
+        "brand": "Browline",
+        "price": "899",
+        "gender": "unisex"
+    },
+    {
+        "id": "5",
+        "image": "/public/images/vvs-KB5ViQb2ztM-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Swimmer",
+        "brand": "Frahm",
+        "price": "899",
+        "gender": "male"
+    },
+    {
+        "id": "6",
+        "image": "/public/images/alina-makhatyrova-6uN62r_vhH8-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Snakelens",
+        "brand": "Frahm",
+        "price": "999",
+        "gender": "female"
+    },
+    {
+        "id": "7",
+        "image": "/public/images/klickors-moe-1CjiCJgHOOY-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Gala T20",
+        "brand": "Frahm",
+        "price": "899",
+        "gender": "unisex"
+    },
+    {
+        "id": "8",
+        "image": "/public/images/lola-rose-zF4QVqUQrqc-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Coconut",
+        "brand": "Frahm",
+        "price": "799",
+        "gender": "female"
+    },
+    {
+        "id": "9",
+        "image": "/public/images/tolga-deniz-aran-X6N7UrDkKL0-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Yellowmellow",
+        "brand": "Fancyeyes",
+        "price": "899",
+        "gender": "unisex"
+    },
+    {
+        "id": "10",
+        "image": "/public/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Snow",
+        "brand": "Fancyeyes",
+        "price": "899",
+        "gender": "unisex"
+    },
+    {
+        "id": "11",
+        "image": "/public/images/jorien-loman-ED5HV4HqSSg-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Strawberry",
+        "brand": "Fancyeyes",
+        "price": "1699",
+        "gender": "female"
+    },
+    {
+        "id": "12",
+        "image": "/public/images/alina-makhatyrova-Rw2rlDoGl-M-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Potter",
+        "brand": "Fancyeyes",
+        "price": "999",
+        "gender": "female"
+    },
+    {
+        "id": "13",
+        "image": "/public/images/wrist-watch-g0e8b2b282_1280.jpg",
+        "alt": "Watch Image",
+        "name": "Rectangle T11",
+        "brand": "Albert",
+        "price": "1699",
+        "gender": "male"
+    },
+    {
+        "id": "14",
+        "image": "/public/images/157-industries-aKrMVLlaPFY-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Beach X100",
+        "brand": "Albert",
+        "price": "899",
+        "gender": "unisex"
+    },
+    {
+        "id": "15",
+        "image": "/public/images/csaba-bakos-8Z4YsUdpupo-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Square T50",
+        "brand": "Albert",
+        "price": "1799",
+        "gender": "unisex"
+    },
+    {
+        "id": "16",
+        "image": "/public/images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Cotton Candy",
+        "brand": "Melina",
+        "price": "1299",
+        "gender": "male"
+    },
+    {
+        "id": "17",
+        "image": "/public/images/mambawatches-SEvTZ0C9zhU-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Sadie",
+        "brand": "Melina",
+        "price": "1399",
+        "gender": "female"
+    },
+    {
+        "id": "18",
+        "image": "/public/images/lola-rose-xeOHwuszymk-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Michael",
+        "brand": "Albert",
+        "price": "899",
+        "gender": "female"
+    },
+    {
+        "id": "19",
+        "image": "/public/images/salvador-escalante-EfjlkpoGjs4-unsplash.jpg",
+        "alt": "Watch Image",
+        "name": "Velvet Thunder",
+        "brand": "Melina",
+        "price": "899",
+        "gender": "male"
+    },
+    {
+        "id": "20",
+        "image": "/public/images/wrist-watch-g0e8b2b282_1280.jpg",
+        "alt": "Watch Image",
+        "name": "Maximus Totalus",
+        "brand": "Albert",
+        "price": "2199",
+        "gender": "unisex"
+    }
+]

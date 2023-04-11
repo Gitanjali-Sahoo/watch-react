@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Navbar from './components/Navbar'
 import ImageSlider from './components/ImageSlider'
-// import Slider from './components/Slider'
+
 import Category from './components/Category'
+import Cards from './components/Cards'
 
 function App() {
     const images = [
@@ -14,20 +15,6 @@ function App() {
         'https://images.unsplash.com/photo-1580658001207-ccd9b884191c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     ]
     const interval = 3000
-    // const slides = [
-    //     {
-    //       title: 'Slide 1',
-    //       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    //     },
-    //     {
-    //       title: 'Slide 2',
-    //       description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    //     },
-    //     {
-    //       title: 'Slide 3',
-    //       description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    //     }
-    //   ];
 
     return (
         <div className="App">
@@ -37,6 +24,7 @@ function App() {
 
             {/* <ImageSlider/> */}
             <Category />
+            <Cards />
         </div>
     )
 }

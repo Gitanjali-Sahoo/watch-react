@@ -8,7 +8,7 @@ function BasicExample() {
             <Card style={{ width: '18rem' }}>
                 <Card.Img
                     variant="top"
-                    src="/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+                    src="/images/joycoast-wood-watches-sunglasses-fFOar3AwgzQ-unsplash.jpg"
                 />
                 <CardBody>
                     <Card.Title></Card.Title>
@@ -20,7 +20,7 @@ function BasicExample() {
             <Card style={{ width: '18rem' }}>
                 <Card.Img
                     variant="top"
-                    src="/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+                    src="/images/lola-rose-WDoxXXnccys-unsplash.jpg"
                 />
                 <CardBody>
                     <CardButton>
@@ -31,7 +31,7 @@ function BasicExample() {
             <Card style={{ width: '18rem' }}>
                 <Card.Img
                     variant="top"
-                    src="/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+                    src="/images/paul-cuoco-SLU0U_a6fbQ-unsplash (2).jpg"
                 />
                 <CardBody>
                     {/* <Card.Title>Card Title</Card.Title> */}
