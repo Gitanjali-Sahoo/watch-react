@@ -3,17 +3,18 @@ import productsData from '../data/product.json'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const ProductList = () => {
     return (
         <Wrap>
             <HeroText>Our Favourites</HeroText>
             <div className="product-list">
-                {productsData.map((product, index) => (
+                {productsData.map((product) => (
                     <Card
                         className="card-wrapper"
                         style={{ width: '18rem' }}
-                        key={index}
+                        key={product.id}
                     >
                         <Card.Img
                             className="card-image"
@@ -22,7 +23,10 @@ const ProductList = () => {
                             alt={product.alt}
                         />
                         <Card.Body>
-                            <CardTitle>{product.name}</CardTitle>
+                            {/* <CardTitle>{product.name}</CardTitle> */}
+                            <Link to={`/products/${product.id}`}>
+                                {product.name}
+                            </Link>
                             <CardText>{product.brand}</CardText>
                             <Button className="card-btn" variant="primary">
                                 Add to Cart
@@ -76,8 +80,8 @@ const HeroText = styled.div`
 const CardText = styled.div`
     padding-bottom: 5px;
 `
-const CardTitle = styled.div`
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-`
+// const CardTitle = styled.div`
+//     padding: 0;
+//     font-size: 1.2rem;
+//     font-weight: bold;
+// `

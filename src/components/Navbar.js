@@ -6,14 +6,12 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { Heart, Cart, Person } from 'react-bootstrap-icons'
-
-
-
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function OffcanvasExample() {
     return (
-        <>
+        <Wrap>
             {[false].map((expand) => (
                 <Navbar
                     style={{ backgroundColor: '#C1C35B', padding: '0' }}
@@ -24,9 +22,20 @@ function OffcanvasExample() {
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                         />
-                        <Navbar.Brand href="#" style={{ fontSize: '35px' }}>
+                        {/* <Navbar.Brand href="#" style={{ fontSize: '35px' }}>
                             Navbar Offcanvas
-                        </Navbar.Brand>
+                        </Navbar.Brand> */}
+                        <Link
+                            className="Navbar.Brand"
+                            style={{
+                                fontSize: '35px',
+                                color: 'black',
+                                textDecorationLine: 'none'
+                            }}
+                            to="/"
+                        >
+                            TimeZen
+                        </Link>
 
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -37,15 +46,17 @@ function OffcanvasExample() {
                                 <Offcanvas.Title
                                     id={`offcanvasNavbarLabel-expand-${expand}`}
                                 >
-                                    Offcanvas
+                                    TimeZen
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-
-                                    <Nav.Link href="#action1">Home</Nav.Link>
-
-                                    <Nav.Link href="#action2">Link</Nav.Link>
+                                    <Link className="Nav-Link" to="/about">
+                                        About
+                                    </Link>
+                                    <Link className="Nav-Link" to="/contact">
+                                        Contact
+                                    </Link>
                                     <NavDropdown
                                         title="Dropdown"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -84,13 +95,15 @@ function OffcanvasExample() {
                     </Container>
                 </Navbar>
             ))}
-        </>
+        </Wrap>
     )
 }
 
 export default OffcanvasExample
 
 //Using styled components
+
+const Wrap = styled.div``
 
 const NavIcons = styled.div`
     display: flex;

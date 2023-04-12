@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext} from 'react'
-import MyContext from './MyContext'
+import React, { useState, useEffect, useContext } from 'react'
+import MyContext from '../components/MyContext'
 import styled from 'styled-components'
-
 
 const ImageSlider = ({ images, interval }) => {
     const [index, setIndex] = useState(0)
@@ -12,14 +11,14 @@ const ImageSlider = ({ images, interval }) => {
         }, interval)
         return () => clearInterval(timer)
     }, [index, images.length, interval])
-    
-    const value = useContext(MyContext);
+
+    const value = useContext(MyContext)
 
     return (
         <div>
             <Wrap>
                 <TitleText>
-                <h2>{value}</h2>
+                    <h2>{value}</h2>
                     {/* <h2>Lovely Watches</h2> */}
                     <p>Explore Here</p>
                 </TitleText>
@@ -49,5 +48,5 @@ const TitleText = styled.div`
     font-weight: bold;
     text-align: center;
     z-index: 1;
-    padding-bottom: 100vh;
+    padding-bottom: 80vh;
 `

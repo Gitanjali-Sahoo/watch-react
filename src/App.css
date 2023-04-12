@@ -4,3 +4,7 @@
     box-sizing: border-box;
     background-color: rgb(241, 222, 114);
 }
+.Nav-Link {
+    text-decoration: none;
+    color: black;
+}
