@@ -6,7 +6,8 @@
         "name": "Cat-eye T1",
         "brand": "Browline",
         "price": "899",
-        "gender": "male"
+        "gender": "male",
+        "stock": "10+"
     },
     {
         "id": "2",
@@ -15,7 +16,8 @@
         "name": "Geoglass 1",
         "brand": "Browline",
         "price": "1999",
-        "gender": "female"
+        "gender": "female",
+        "stock": "15+"
     },
     {
         "id": "3",
@@ -24,7 +26,8 @@
         "name": "Roundicus X2000",
         "brand": "Melina",
         "price": "1099",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "35+"
     },
     {
         "id": "4",
@@ -33,7 +36,8 @@
         "name": "Norman",
         "brand": "Browline",
         "price": "899",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "65+"
     },
     {
         "id": "5",
@@ -42,7 +46,8 @@
         "name": "Swimmer",
         "brand": "Frahm",
         "price": "899",
-        "gender": "male"
+        "gender": "male",
+        "stock": "10+"
     },
     {
         "id": "6",
@@ -51,7 +56,8 @@
         "name": "Snakelens",
         "brand": "Frahm",
         "price": "999",
-        "gender": "female"
+        "gender": "female",
+        "stock": "3+"
     },
     {
         "id": "7",
@@ -60,7 +66,8 @@
         "name": "Gala T20",
         "brand": "Frahm",
         "price": "899",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "90+"
     },
     {
         "id": "8",
@@ -69,7 +76,8 @@
         "name": "Coconut",
         "brand": "Frahm",
         "price": "799",
-        "gender": "female"
+        "gender": "female",
+        "stock": "23+"
     },
     {
         "id": "9",
@@ -78,7 +86,8 @@
         "name": "Yellowmellow",
         "brand": "Fancyeyes",
         "price": "899",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "17+"
     },
     {
         "id": "10",
@@ -87,7 +96,8 @@
         "name": "Snow",
         "brand": "Fancyeyes",
         "price": "899",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "1+"
     },
     {
         "id": "11",
@@ -96,7 +106,8 @@
         "name": "Strawberry",
         "brand": "Fancyeyes",
         "price": "1699",
-        "gender": "female"
+        "gender": "female",
+        "stock": "44+"
     },
     {
         "id": "12",
@@ -105,7 +116,8 @@
         "name": "Potter",
         "brand": "Fancyeyes",
         "price": "999",
-        "gender": "female"
+        "gender": "female",
+        "stock": "13+"
     },
     {
         "id": "13",
@@ -114,7 +126,8 @@
         "name": "Rectangle T11",
         "brand": "Albert",
         "price": "1699",
-        "gender": "male"
+        "gender": "male",
+        "stock": "5+"
     },
     {
         "id": "14",
@@ -123,7 +136,8 @@
         "name": "Beach X100",
         "brand": "Albert",
         "price": "899",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "34+"
     },
     {
         "id": "15",
@@ -132,7 +146,8 @@
         "name": "Square T50",
         "brand": "Albert",
         "price": "1799",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "15+"
     },
     {
         "id": "16",
@@ -141,7 +156,8 @@
         "name": "Cotton Candy",
         "brand": "Melina",
         "price": "1299",
-        "gender": "male"
+        "gender": "male",
+        "stock": "11+"
     },
     {
         "id": "17",
@@ -150,7 +166,8 @@
         "name": "Sadie",
         "brand": "Melina",
         "price": "1399",
-        "gender": "female"
+        "gender": "female",
+        "stock": "20+"
     },
     {
         "id": "18",
@@ -159,7 +176,8 @@
         "name": "Michael",
         "brand": "Albert",
         "price": "899",
-        "gender": "female"
+        "gender": "female",
+        "stock": "50+"
     },
     {
         "id": "19",
@@ -168,7 +186,8 @@
         "name": "Velvet Thunder",
         "brand": "Melina",
         "price": "899",
-        "gender": "male"
+        "gender": "male",
+        "stock": "31+"
     },
     {
         "id": "20",
@@ -177,6 +196,7 @@
         "name": "Maximus Totalus",
         "brand": "Albert",
         "price": "2199",
-        "gender": "unisex"
+        "gender": "unisex",
+        "stock": "5+"
     }
 ]

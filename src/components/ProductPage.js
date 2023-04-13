@@ -53,7 +53,7 @@ function ProductPage() {
 
                     <p>Gender: {product.gender}</p>
                     <p style={{ color: 'blue' }}>(with 20% Off )</p>
-                    <p>10+ in stock</p>
+                    <p>{product.stock} in stock</p>
                     <p>Delivery Policy</p>
 
                     <button>Add to Cart</button>
