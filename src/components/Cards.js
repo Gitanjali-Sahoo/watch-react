@@ -24,7 +24,10 @@ const ProductList = () => {
                         />
                         <Card.Body>
                             {/* <CardTitle>{product.name}</CardTitle> */}
-                            <Link to={`/products/${product.id}`}>
+                            <Link
+                                className="Product-Link"
+                                to={`/products/${product.id}`}
+                            >
                                 {product.name}
                             </Link>
                             <CardText>{product.brand}</CardText>
@@ -50,6 +53,12 @@ const Wrap = styled.div`
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-bottom: 20px;
+    }
+    .Product-Link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
     }
 
     .card-image {
@@ -66,10 +75,18 @@ const Wrap = styled.div`
     .card-btn {
         background-color: aqua;
         color: black;
+        padding: 4px 10px;
+        border: none;
+
+
+        transition: box-shadow 0.3s ease-in-out;
     }
+
     .card-btn:hover {
-        background-color: blue;
-        color: white;
+        box-shadow: 0px 0px 20px goldenrod;
+background-color: goldenrod;
+transition: box-shadow 0.5s ease-in-out;
+outline: none;
     }
 `
 const HeroText = styled.div`

@@ -1,15 +1,26 @@
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
-import Form from 'react-bootstrap/Form'
+
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { Heart, Cart, Person } from 'react-bootstrap-icons'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import LoginPopup from '../components/LoginPopup'
 
 function OffcanvasExample() {
+    const [showLoginPopup, setShowLoginPopup] = useState(false)
+
+    function handleLoginClick() {
+        setShowLoginPopup(true)
+    }
+
+    function handleCloseClick() {
+        setShowLoginPopup(false)
+    }
+
     return (
         <Wrap>
             {[false].map((expand) => (
@@ -22,9 +33,7 @@ function OffcanvasExample() {
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                         />
-                        {/* <Navbar.Brand href="#" style={{ fontSize: '35px' }}>
-                            Navbar Offcanvas
-                        </Navbar.Brand> */}
+
                         <Link
                             className="Navbar.Brand"
                             style={{
@@ -43,11 +52,24 @@ function OffcanvasExample() {
                             placement="start"
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title
+                                <Link
+                                    id={`offcanvasNavbarLabel-expand-${expand}`}
+                                    className="Offcanvas.Title"
+                                    style={{
+                                        fontSize: '25px',
+                                        color: 'black',
+                                        textDecorationLine: 'none'
+                                    }}
+                                    to="/"
+                                >
+                                    TimeZen
+                                </Link>
+
+                                {/* <Offcanvas.Title
                                     id={`offcanvasNavbarLabel-expand-${expand}`}
                                 >
                                     TimeZen
-                                </Offcanvas.Title>
+                                </Offcanvas.Title> */}
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -57,40 +79,30 @@ function OffcanvasExample() {
                                     <Link className="Nav-Link" to="/contact">
                                         Contact
                                     </Link>
-                                    <NavDropdown
-                                        title="Dropdown"
-                                        id={`offcanvasNavbarDropdown-expand-${expand}`}
+                                    <button
+                                        className="Nav-Link1"
+                                        onClick={handleLoginClick}
                                     >
-                                        <NavDropdown.Item href="#action3">
-                                            Action
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">
-                                            Another action
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action5">
-                                            Something else here
-                                        </NavDropdown.Item>
-                                    </NavDropdown>
+                                        Login
+                                        <Person />
+                                    </button>
+                                    {showLoginPopup && (
+                                        <LoginPopup
+                                            onClose={handleCloseClick}
+                                        />
+                                    )}
                                 </Nav>
-                                <Form className="d-flex">
-                                    <Form.Control
-                                        type="search"
-                                        placeholder="Search"
-                                        className="me-2"
-                                        aria-label="Search"
-                                    />
-                                    <Button variant="outline-success">
-                                        Search
-                                    </Button>
-                                </Form>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
 
                         <NavIcons>
                             <Heart />
                             <Cart />
-                            <Person />
+                            {/* <Person /> */}
+
+                            {/* <button onClick={handleLoginClick}>
+                                <Person />
+                            </button> */}
                         </NavIcons>
                     </Container>
                 </Navbar>

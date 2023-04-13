@@ -75,4 +75,8 @@ const CardButton = styled.div`
         font-size: 1.6rem;
         padding: 0;
     }
+    Button:hover {
+        background-color: white;
+        color: black;
+    }
 `

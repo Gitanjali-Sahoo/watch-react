@@ -8,3 +8,11 @@
     text-decoration: none;
     color: black;
 }
+
+.Nav-Link1 {
+    width: 65px;
+    border: none;
+    background-color: white;
+    padding-left: 0;
+}
+
