@@ -99,6 +99,9 @@ const DetailsWrapper = styled.div`
         color: white;
         font-weight: bold;
     }
+    .offer-btn:hover {
+        background-color: green;
+    }
     p {
         font-weight: 600;
     }
