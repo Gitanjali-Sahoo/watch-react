@@ -46,6 +46,7 @@ function OffcanvasExample() {
                             style={{
                                 fontSize: '35px',
                                 color: 'black',
+                                fontWeight: 'bold',
                                 textDecorationLine: 'none'
                             }}
                             to="/"
