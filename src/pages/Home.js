@@ -4,6 +4,8 @@ import Category from '../components/Category'
 import Cards from '../components/Cards'
 import MyContext from '../components/MyContext'
 
+
+
 function Home() {
     const images = [
         'https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80',
@@ -17,6 +19,7 @@ function Home() {
             <MyContext.Provider value="Lovely Watches">
                 <ImageSlider images={images} interval={interval} />
             </MyContext.Provider>
+
             <Category />
             <Cards />
         </>

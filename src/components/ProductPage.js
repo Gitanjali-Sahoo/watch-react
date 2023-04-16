@@ -13,7 +13,7 @@ function ProductPage() {
 
     return (
         <div className="product-details">
-            <DetailsWrapper>
+            <DetailsWrapper className="product">
                 <div className="image-wrapper">
                     <img src={product.image} alt={product.alt} />
                     <button className="offer-btn">
@@ -80,31 +80,43 @@ export default ProductPage
 const DetailsWrapper = styled.div`
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 4%;
     background-color: white;
-    padding: 10px;
+    padding: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+
     & img {
-        height: 500px;
-        width: 600px;
-        /* flex: 50%; */
+        max-width: 100%;
+        height: auto;
     }
+
     .image-wrapper {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .offer-btn {
         background-color: #4caf50;
         border: none;
         color: white;
         font-weight: bold;
     }
+
     .offer-btn:hover {
         background-color: green;
     }
+
     p {
         font-weight: 600;
     }
+`
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 `
 const Description = styled.div`
     flex: 50%;
@@ -127,10 +139,4 @@ const Description = styled.div`
     button:hover {
         background-color: green;
     }
-`
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
 `

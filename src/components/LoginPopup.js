@@ -24,7 +24,11 @@ function LoginPopup({ onClose }) {
             <div className="login-popup-overlay">
                 <div className="login-popup">
                     <div className="login-popup-content">
-                        <span className="close" onClick={onClose}>
+                        <span
+                            className="close"
+                            onClick={onClose}
+                            style={{ color: 'rgb(25, 156, 135)' }}
+                        >
                             &times;
                         </span>
 
@@ -61,8 +65,9 @@ const Wrap = styled.div`
     .login-popup-overlay {
         margin-top: 10px;
         border-radius: 5px;
-        background-color: #f2f2f2;
+        /* background-color: #f2f2f2; */
         padding: 10px;
+        background-color: white;
     }
     input,
     select {
@@ -73,10 +78,11 @@ const Wrap = styled.div`
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        background-color: rgb(211, 229, 236);
     }
     button[type='submit'] {
         width: 100%;
-        background-color: #4caf50;
+        background-color: rgb(25, 156, 135);
         color: white;
         padding: 8px 20px;
         margin: 8px 0;
@@ -86,7 +92,10 @@ const Wrap = styled.div`
         text-align: center;
     }
     button[type='submit']:hover {
-        background-color: #45a049;
+        box-shadow: 0px 0px 20px rgb(25, 156, 135);
+        background-color: rgb(25, 156, 135);
+        transition: box-shadow 0.5s ease-in-out;
+        outline: none;
     }
     .login-popup-content {
         position: relative;
@@ -98,5 +107,8 @@ const Wrap = styled.div`
         cursor: pointer;
         font-size: 20px;
         font-weight: bold;
+    }
+    & label {
+        color: #06392f;
     }
 `

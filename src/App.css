@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(241, 222, 114);
+    /* background-color: rgb(241, 222, 114); */
+    background-color: rgb(206, 238, 243);
 }
+
+/*Navbar Stylling*/
 .Nav-Link {
     text-decoration: none;
     color: black;
@@ -15,4 +18,45 @@
     background-color: white;
     padding-left: 0;
 }
+
+/*About Page Stylling*/
+.about-wrapper {
+    padding: 20px 40px;
+    background-color: white;
+}
+.about-text {
+    text-align: center;
+    background-color: rgb(211, 229, 236);
+    padding: 30px 50px;
+}
+.about-btn {
+    padding: 5px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(18, 107, 143);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/*Card Stylling*/
+.card-body {
+    background-color: white;
+}
+
+@media only screen and (man-width: 400px) {
+    .product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (man-width: 800px) {
+    .product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 

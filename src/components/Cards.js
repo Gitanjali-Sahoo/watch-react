@@ -9,6 +9,7 @@ const ProductList = () => {
     return (
         <Wrap>
             <HeroText>Our Favourites</HeroText>
+            <hr />
             <div className="product-list">
                 {productsData.map((product) => (
                     <Card
@@ -22,7 +23,7 @@ const ProductList = () => {
                             src={product.image}
                             alt={product.alt}
                         />
-                        <Card.Body>
+                        <Card.Body className="card-body">
                             {/* <CardTitle>{product.name}</CardTitle> */}
                             <Link
                                 className="Product-Link"
@@ -55,6 +56,25 @@ const Wrap = styled.div`
         text-align: center;
         margin-bottom: 20px;
     }
+
+    @media (max-width: 1200px) {
+        .product-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 992px) {
+        .product-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
     .Product-Link {
         text-decoration: none;
         color: black;
@@ -69,24 +89,54 @@ const Wrap = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* width: 300px; */
         margin: auto;
     }
     .card-btn {
-        background-color: aqua;
-        color: black;
+        background-color: rgb(25, 156, 135);
+        color: white;
         padding: 4px 10px;
         border: none;
-
-
+        font-weight: bold;
         transition: box-shadow 0.3s ease-in-out;
     }
 
     .card-btn:hover {
-        box-shadow: 0px 0px 20px goldenrod;
-background-color: goldenrod;
-transition: box-shadow 0.5s ease-in-out;
-outline: none;
+        box-shadow: 0px 0px 20px rgb(25, 156, 135);
+        background-color: rgb(25, 156, 135);
+        transition: box-shadow 0.5s ease-in-out;
+        outline: none;
+    }
+    .Product-Link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+    }
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: auto;
+    }
+    .card-btn {
+        background-color: rgb(25, 156, 135);
+        color: white;
+        padding: 4px 10px;
+        border: none;
+        font-weight: bold;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .card-btn:hover {
+        box-shadow: 0px 0px 20px rgb(25, 156, 135);
+        background-color: rgb(25, 156, 135);
+        transition: box-shadow 0.5s ease-in-out;
+        outline: none;
     }
 `
 const HeroText = styled.div`
@@ -97,8 +147,3 @@ const HeroText = styled.div`
 const CardText = styled.div`
     padding-bottom: 5px;
 `
-// const CardTitle = styled.div`
-//     padding: 0;
-//     font-size: 1.2rem;
-//     font-weight: bold;
-// `

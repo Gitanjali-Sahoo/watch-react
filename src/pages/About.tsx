@@ -7,8 +7,8 @@ type Props = {
 
 const Hello: FC<Props> = ({ name, age }) => {
     return (
-        <div>
-            <h2>About Us</h2>
+        <div className="about-wrapper">
+            <h2 style={{ textAlign: 'center' }}>About Us</h2>
             <hr />
             <h4>Our Story</h4>
             <p>
@@ -39,8 +39,22 @@ const Hello: FC<Props> = ({ name, age }) => {
                 instructions and technical information (if applicable), will be
                 present and correct.
             </p>
-            <p>Name: {name}</p>
-            <p>Age: {age}</p>
+            <div className="about-text">
+                <h4>Be the first to know</h4>
+                <h5>
+                    Discover how to find the best watch <br />
+                    and enjoy exclusive products and offers via email
+                </h5>
+                <hr />
+                <input type="text" placeholder={name} />
+                <br />
+                <label style={{ fontSize: '15px' }}>
+                    <input type="checkbox" /> I accept the privacy policy
+                </label>
+                <br />
+
+                <button className="about-btn">Sign Up</button>
+            </div>
         </div>
     )
 }
