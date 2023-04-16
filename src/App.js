@@ -2,13 +2,14 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-// import MyContext from './components/MyContext'
+
 import { Routes, Route } from 'react-router-dom'
 import About from './pages/About.tsx'
-// import Contact from './pages/Contact'
+
 import Home from './pages/Home'
 import ProductPage from './components/ProductPage'
 import Form from './components/Form'
+
 
 function App() {
     return (
@@ -16,18 +17,22 @@ function App() {
             <div className="App">
                 <Navbar />
 
+
+
+
+
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route
                         path="/about"
                         element={<About name={'Enter your email'} />}
                     />
-                   
+
                     <Route
                         path="/products/:productId"
                         element={<ProductPage />}
                     />
-                    <Route path="/form" element={<Form/>} />
+                    <Route path="/form" element={<Form />} />
                 </Routes>
 
                 <Footer />

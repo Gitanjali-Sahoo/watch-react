@@ -82,19 +82,20 @@ const DetailsWrapper = styled.div`
     justify-content: center;
     margin: 4%;
     background-color: white;
-    padding: 5%;
+    padding: 3%;
     flex-wrap: wrap;
     align-items: center;
 
     & img {
         max-width: 100%;
-        height: auto;
+        height: 500px;
     }
 
     .image-wrapper {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        flex: 50%;
     }
 
     .offer-btn {
@@ -111,7 +112,12 @@ const DetailsWrapper = styled.div`
     p {
         font-weight: 600;
     }
+
+    @media only screen and (min-width: 300px) and (max-width: 790px) {
+        flex-direction: column;
+    }
 `
+
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
@@ -120,8 +126,8 @@ const Wrapper = styled.div`
 `
 const Description = styled.div`
     flex: 50%;
-    padding-left: 20px;
-    padding-top: 60px;
+    padding-left: 30px;
+    padding-top: 10px;
 
     p {
         margin-bottom: 0;

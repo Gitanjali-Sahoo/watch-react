@@ -25,10 +25,16 @@ function OffcanvasExample() {
         <Wrap>
             {[false].map((expand) => (
                 <Navbar
-                    style={{ backgroundColor: 'rgb(211, 229, 236)', padding: '0'}}
+                    style={{
+                        backgroundColor: 'rgb(211, 229, 236)',
+                        padding: '0',
+                        position: 'fixed',
+                        top: '0',
+                        width: '100%',
+                        zIndex: '100'
+                    }}
                     key={expand}
                     expand={expand}
-
                 >
                     <Container fluid>
                         <Navbar.Toggle
@@ -51,7 +57,7 @@ function OffcanvasExample() {
                             id={`offcanvasNavbar-expand-${expand}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                             placement="start"
-                            style={{backgroundColor:'rgb(211, 229, 236)'}}
+                            style={{ backgroundColor: 'rgb(211, 229, 236)' }}
                         >
                             <Offcanvas.Header closeButton>
                                 <Link
@@ -73,7 +79,7 @@ function OffcanvasExample() {
                                     TimeZen
                                 </Offcanvas.Title> */}
                             </Offcanvas.Header>
-                            <Offcanvas.Body >
+                            <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Link className="Nav-Link" to="/about">
                                         About
@@ -117,9 +123,7 @@ export default OffcanvasExample
 
 //Using styled components
 
-const Wrap = styled.div`
-
-`
+const Wrap = styled.div``
 
 const NavIcons = styled.div`
     display: flex;
