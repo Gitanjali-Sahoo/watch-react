@@ -8,7 +8,9 @@ type Props = {
 const Hello: FC<Props> = ({ name, age }) => {
     return (
         <div className="about-wrapper">
-            <h2 style={{ textAlign: 'center' }}>About Us</h2>
+            <h2 className='about-head' style={{ textAlign: 'center', marginTop:'5%' }}>
+                About Us
+            </h2>
             <hr />
             <h4>Our Story</h4>
             <p>

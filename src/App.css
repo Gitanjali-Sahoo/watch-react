@@ -38,6 +38,11 @@
     font-weight: bold;
     border-radius: 8px;
 }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .about-head {
+        margin-top: 20%;
+    }
+}
 
 /*Card Stylling*/
 .card-body {
