@@ -40,7 +40,7 @@
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
     .about-head {
-        margin-top: 20%;
+        padding-top: 15%;
     }
 }
 
